@@ -27,25 +27,40 @@ Wertzuweisung II + Datentypen
 JS ist ein untypisierte Sprache!
  */
 
-let test;
-// test = "hi";
-// test = 2;
+// let test;
+// // test = "hi";
+// // test = 2;
 
-/* undefined */
-console.log("Dattentyp: " + typeof test); // Ausgabe Datentyp
-console.log("Inhalt: " + test); // Ausgabe Inhalt
-console.log("-----------------")
-test = "hi"; // string
-console.log("Dattentyp: " + typeof test); // Ausgabe Datentyp
-console.log("Inhalt: " + test); // Ausgabe Inhalt
-console.log("-----------------")
+// /* undefined */
+// console.log("Dattentyp: " + typeof test); // Ausgabe Datentyp
+// console.log("Inhalt: " + test); // Ausgabe Inhalt
+// console.log("-----------------")
+// test = "hi"; // string
+// console.log("Dattentyp: " + typeof test); // Ausgabe Datentyp
+// console.log("Inhalt: " + test); // Ausgabe Inhalt
+// console.log("-----------------")
 
-test = 2; // number
-console.log("Dattentyp: " + typeof test); // Ausgabe Datentyp
-console.log("Inhalt: " + test); // Ausgabe Inhalt
-console.log("-----------------")
+// test = 2; // number
+// console.log("Dattentyp: " + typeof test); // Ausgabe Datentyp
+// console.log("Inhalt: " + test); // Ausgabe Inhalt
+// console.log("-----------------")
 
-test = true;
-console.log("Dattentyp: " + typeof test); // Ausgabe Datentyp
-console.log("Inhalt: " + test); // Ausgabe Inhalt
-console.log("-----------------")
+// test = true;
+// console.log("Dattentyp: " + typeof test); // Ausgabe Datentyp
+// console.log("Inhalt: " + test); // Ausgabe Inhalt
+// console.log("-----------------")
+
+/* Variablen vs. Konstanten in JS */
+
+// Variable
+let test; // Variable : Deklaration
+test = "hi"; // Wertzuweisung (Initialisierung)
+test = "hello"; // Überschreiben
+console. log ("Inhalt: " + test); //Ausgabe
+
+// Konstante
+const test2 ="Hi"; //DEklaration + Wertzuweisung gemeinsam
+// // test2 = "hello"; //  Laufzeit-Fehler !!
+console. log("Inhalt: " + test2); //Ausgabe
+
+
