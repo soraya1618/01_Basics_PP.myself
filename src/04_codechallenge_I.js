@@ -14,25 +14,39 @@ const prompt = require('prompt-sync')({sigint: true});
 /********* Variante 1 **********/
 // Vorteil: gute lesbarkeit | aber viele Variablen 
 
-let ziffer1, ziffer2, Zahl1, Zahl2,summe;
+// let ziffer1, ziffer2, Zahl1, Zahl2,summe;
 
-ziffer1 = prompt("Bitte Zahl 1 eingeben:"); 
-ziffer2 = prompt("Bitte Zahl 2 eingeben:");
+// ziffer1 = prompt("Bitte Zahl 1 eingeben:"); 
+// ziffer2 = prompt("Bitte Zahl 2 eingeben:");
 
- console.log("Datentyp: " + typeof ziffer1);
- console.log("Datentyp: " + typeof ziffer2);
+//  console.log("Datentyp: " + typeof ziffer1);
+//  console.log("Datentyp: " + typeof ziffer2);
 
-//  console.log(ziffer1 + ziffer2); --> ziffer gibt Text mit string als Datentyp
+// //  console.log(ziffer1 + ziffer2); --> ziffer gibt Text mit string als Datentyp
 
-// Typkonvertierung 1: ziffer --> Zahl (mit Nachkomma)
-Zahl1 = parseFloat(ziffer1);
-Zahl2 = parseFloat(ziffer2);
-
-
-console.log("Datentyp: " + typeof Zahl1);
-console.log("Datentyp: " + typeof Zahl2);
+// // Typkonvertierung 1: ziffer --> Zahl (mit Nachkomma)
+// Zahl1 = parseFloat(ziffer1);
+// Zahl2 = parseFloat(ziffer2);
 
 
-summe = Zahl1 + Zahl2;
+// console.log("Datentyp: " + typeof Zahl1);
+// console.log("Datentyp: " + typeof Zahl2);
+
+
+// summe = Zahl1 + Zahl2;
+// console.log("Die Summe der Zahlen ist: " + summe);
+
+
+
+ /*********** Variante 2  ****************/
+
+// Kompaktere Lösung
+
+let zahl1, zahl2, summe;
+
+zahl1 = parseInt(prompt("Zahl 1: "));
+zahl2 = parseInt(prompt("Zahl 2: "));
+
+summe = zahl1 + zahl2;
+
 console.log("Die Summe der Zahlen ist: " + summe);
-
