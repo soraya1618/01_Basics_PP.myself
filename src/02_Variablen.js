@@ -48,7 +48,7 @@ JS ist ein untypisierte Sprache!
 // test = true;
 // console.log("Dattentyp: " + typeof test); // Ausgabe Datentyp
 // console.log("Inhalt: " + test); // Ausgabe Inhalt
-// console.log("-----------------")
+// console.log("-----------------") 
 
 /* Variablen vs. Konstanten in JS */
 
