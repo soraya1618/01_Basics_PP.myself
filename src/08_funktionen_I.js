@@ -104,7 +104,7 @@ function getString2(name)
  }
 
 function add(n1, n2) {
-    return n1 + n2;
+    
 }
  function sub(n1,n2) {
     return n1- n2;
@@ -112,6 +112,6 @@ function add(n1, n2) {
 
 let result = add(1, 2);
  console.log(result);
- //rechner(add(4, 5));
- let name = "abx";
+ rechner(add(4, 5));
+ 
  
