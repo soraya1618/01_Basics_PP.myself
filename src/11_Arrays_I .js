@@ -40,13 +40,13 @@ hier: Aufsummierung
 
 /* Besser: mit FOR-Schleife */
 
-let a = 0; // Anfangswert
-for (let i = 0; i < 10; i++) {
+// let a = 0; // Anfangswert
+// for (let i = 0; i < 10; i++) {
   
-//  a = a + 1
-   a += 1; 
-   output("inhalt von a: " + a);
-}
+// //  a = a + 1
+//    a += 1; 
+//    output("inhalt von a: " + a);
+// }
 
 
 /*
@@ -55,11 +55,11 @@ Solange die Variable existiert, bleibt dieser erhalten
 hier: Verkettung eines Strings // Transponierung
 */
 
-let str = ""; // Anfangswert
-for (let i = 0; i < 10; i++) {
-   str += "Test" + " "; // a = a + 1
-   output(str);
-}
+// let str = ""; // Anfangswert
+// for (let i = 0; i < 10; i++) {
+//    str += "Test" + " "; // a = a + 1
+//    output(str);
+// }
 
 
 
@@ -172,11 +172,41 @@ for (let i = 0; i < 10; i++) {
 // Helge Schneider: Anananandereihung ...
 
 
-// output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
-// function getSentenceArr(arr) {
-//     const GAP = " ";
-//     const PUNCT = ".";
-//     let str;
+output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
+function getSentenceArr(arr) {
+    const GAP = " ";
+    const PUNCT = ".";
+    let str = "";
+
+
+    // for (let i = 0; i < 10; i++) {
+    //     str += "Test" + " "; // a = a + 1
+    //     output(str);
+    //  }
+
+     for (let i = 0; i < arr.length; i++) {
+        if (i != arr.length - 1){  // wenn du noch nich am Ende des Arrays bist ...
+            str += arr [i] + GAP; //ebtweder
+        } else {
+            str += arr [i] + PUNCT; // oder
+        }
+
+
+
+
+
+        // str += arr [i] + GAP; // a = a + 1
+        // str += arr []
+        
+        // output(str);
+
+
+     }
+     
+    //  return str + PUNCT;
+        return str ;
+}
+   
 
 //     for (let i = 0; i < arr.length; i++) 
 //     {
@@ -189,11 +219,13 @@ for (let i = 0; i < 10; i++) {
 // }
 
 
+
+
+
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
+
 function output(outputData) {
-	console.log(outputData);
+    console.log(outputData);
 }
-
-
-  
+	
