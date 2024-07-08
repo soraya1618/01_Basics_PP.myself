@@ -99,4 +99,17 @@
 //     console.log(outputData);
 // }
 
+/* 02b. For-Schleife für Array-Index (Iteration)*/
 
+let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+for (let i = 0; i < arr.length; i++) 
+{
+   output(i); // interner Index
+   output(arr[i]); // Mapping intern ---> extern
+}
+
+
+function output(outputData) {
+	console.log(outputData);
+}
+  
