@@ -5,8 +5,18 @@
  *   THEORIE
  * 
  */
+/*** 02. Theorie: Array */ 
+
+let arr;
+// arr = new Array(); //Konstruktor
+//// arr =[]; // Literal
+arr = [2,11,7,8,12];
 
 
+output(arr);
+output(arr.length); // Anzahl der Elemente
+output(arr[0]); //  index 0 (1. POs. im Array ) (*Index ist zeiger und zeigt erste element:2*)
+output (arr[arr.length-1])
 
 /**
  *   PRAXIS
