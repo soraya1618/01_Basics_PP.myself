@@ -9,7 +9,7 @@
 
 // let arr;
 // arr = new Array(); //Konstruktor
-//// arr =[]; // Literal
+// arr =[]; // Literal
 // arr = [2,11,7,8,12];
 
 
@@ -43,7 +43,7 @@ hier: Aufsummierung
 // let a = 0; // Anfangswert
 // for (let i = 0; i < 10; i++) {
   
-// //  a = a + 1
+//  a = a + 1
 //    a += 1; 
 //    output("inhalt von a: " + a);
 // }
@@ -171,41 +171,41 @@ hier: Verkettung eines Strings // Transponierung
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
 
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
 
-output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
-function getSentenceArr(arr) {
+function getSentenceArr2(arr) {
     const GAP = " ";
     const PUNCT = ".";
     let str = "";
 
+    for(let x = 0; x<5 ; x++){
+        console.log("x: " + x);
+    }
 
-    // for (let i = 0; i < 10; i++) {
-    //     str += "Test" + " "; // a = a + 1
-    //     output(str);
-    //  }
-
-     for (let i = 0; i < arr.length; i++) {
-        if (i != arr.length - 1){  // wenn du noch nich am Ende des Arrays bist ...
-            str += arr [i] + GAP; //ebtweder
-        } else {
-            str += arr [i] + PUNCT; // oder
-        }
-
-
-
-
-
-        // str += arr [i] + GAP; // a = a + 1
-        // str += arr []
-        
-        // output(str);
-
-
-     }
-     
-    //  return str + PUNCT;
-        return str ;
+    return arr.join(GAP) + PUNCT;
 }
+/*
+//   1.Iteration: Struktur GENAU erzeugen   for (let i = 0; i < arr.length; i++) {
+//         if (i != arr.length - 1){  // wenn du noch nich am Ende des Arrays bist ...
+//             str += arr [i] + GAP; //ebtweder
+//         } else {
+//             str += arr [i] + PUNCT; // oder
+//         }
+// 2. Variante: Struktur erzeugen + trimmen()
+// for (let i = 0; i < arr.length; i++) {
+//     str += arr[i] + GAP; // entweder ..
+// }
+// return str.trim() + PUNCT; 
+  
+ // 3. Variante: Ausnutzen von generischen Fuktionen ...
+ 
+//         // str += arr [i] + GAP; // a = a + 1
+
+//         // output(str);
+//      } 
+//     //  return str + PUNCT;
+//         return str ;
+// }
    
 
 //     for (let i = 0; i < arr.length; i++) 
@@ -217,15 +217,13 @@ function getSentenceArr(arr) {
        
 //     return str;
 // }
-
-
+*/
 
 
 
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
-
 function output(outputData) {
-    console.log(outputData);
+    console.log(outputData); 
 }
-	
+
